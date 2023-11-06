@@ -46,6 +46,7 @@ jspm_packages/
 # Optional type checking cache
 *.rts2
 
+.env 
 # Optional editor/IDE files
 .vscode
 .idea
