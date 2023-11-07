@@ -43,8 +43,7 @@ export const login = async (req, res, next) => {
           res
             .cookie("access_token", token, {
               httpOnly: true,
-              domain: "http://localhost:3000/", // Replace with your domain
-              secure: true,
+              origin: "http://localhost:3000",
             })
             .status(200)
             .json(otherDetails);
