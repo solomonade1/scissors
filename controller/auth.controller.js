@@ -43,8 +43,8 @@ export const login = async (req, res, next) => {
           res
             .cookie("access_token", token, {
               httpOnly: true,
-              domain: "https://scissors-api-y0e6.onrender.com", // Replace with your domain
-              secure: true, 
+              domain: "http://localhost:3000/", // Replace with your domain
+              secure: true,
             })
             .status(200)
             .json(otherDetails);
